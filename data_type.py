@@ -48,3 +48,106 @@ print("Tagihan kepada:")
 print(tagihan_ke)
 print("Selamat pagi, anda harus membayar tagihan sebesar:") 
 print(total_harga)
+
+
+#Collection Manipulation
+
+bulan_pembelian = ('Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember')
+print(bulan_pembelian[0])
+print(bulan_pembelian[5])
+print(bulan_pembelian[-1])
+print(bulan_pembelian[-2])
+#slicing
+pertengahan_tahun = bulan_pembelian[5:8]
+print(pertengahan_tahun)
+awal_tahun = bulan_pembelian[:5]
+print(awal_tahun)
+akhir_tahun = bulan_pembelian[8:]
+print(akhir_tahun)
+print(bulan_pembelian[-4:-1])
+
+#penggabungan tuple
+list_makanan = ['Gado-gado', 'Ayam Goreng', 'Rendang']
+list_minuman = ['Es Teh', 'Es Jeruk', 'Es Campur']
+list_menu = list_makanan + list_minuman
+print(list_menu)
+
+#List Manipulation
+# Fitur .append()
+print(">>> Fitur .append()")
+list_makanan = ['Gado-gado', 'Ayam Goreng', 'Rendang']
+list_makanan.append('Ketoprak')
+print(list_makanan)
+# Fitur .clear()
+print(">>> Fitur .clear()")
+list_makanan = ['Gado-gado', 'Ayam Goreng', 'Rendang']
+list_makanan.clear()
+print(list_makanan)
+# Fitur .copy()
+print(">>> Fitur .copy()")
+list_makanan1 = ['Gado-gado', 'Ayam Goreng', 'Rendang']
+list_makanan2 = list_makanan1.copy()
+list_makanan3 = list_makanan1
+list_makanan2.append('Opor')
+list_makanan3.append('Ketoprak')
+print(list_makanan1)
+print(list_makanan2)
+# Fitur .count()
+print(">>> Fitur .count()")
+list_score = ['Budi', 'Sud', 'Budi', 'Budi', 'Budi', 'Sud', 'Sud']
+score_budi = list_score.count('Budi')
+score_sud = list_score.count('Sud')
+print(score_budi) # akan menampilkan output 4
+print(score_sud) # akan menampilkan output 3
+# Fitur .extend()
+print(">>> Fitur .extend()")
+list_menu = ['Gado-gado', 'Ayam Goreng', 'Rendang']
+list_minuman = ['Es Teh', 'Es Jeruk', 'Es Campur']
+list_menu.extend(list_minuman)
+print(list_menu)
+# Fitur .index()
+print(">>> Fitur .index()")
+list_score = ['Budi','Sud','Budi','Budi','Budi','Sud','Sud']
+score_pertama_sud = list_score.index('Sud') + 1
+print(score_pertama_sud) # akan menampilkan output 2
+# Fitur .insert()
+print(">>> Fitur .insert()")
+list_score = ['Budi','Sud','Budi','Budi','Sud']
+list_score.insert(3, 'Sud')
+print(list_score)
+# Fitur .pop()
+print(">>> Fitur .pop()")
+list_menu = ['Gado-gado', 'Ayam Goreng', 'Rendang']
+list_menu.pop(1)
+print(list_menu)
+# Fitur .remove()
+print(">>> Fitur .remove()")
+list_menu = ['Gado-gado', 'Ayam Goreng', 'Rendang', 'Ketoprak']
+list_menu.remove('Rendang')
+print(list_menu)
+# Fitur .reverse()
+print(">>> Fitur .reverse()")
+list_menu = ['Gado-gado', 'Ayam Goreng', 'Rendang', 'Ketoprak']
+list_menu.reverse()
+print(list_menu)
+# Fitur .sort()
+print(">>> Fitur .sort()")
+list_menu = ['Gado-gado', 'Ayam Goreng', 'Rendang', 'Ketoprak']
+list_menu.sort() # Default: Ascending
+print(list_menu) 
+list_menu.sort(reverse=True)# Descending
+print(list_menu) 
+
+#------- TUPLE Manipulation
+# Fitur .count()
+print(">>> Fitur .count()")
+tuple_score = ('Budi', 'Sud', 'Budi', 'Budi', 'Budi', 'Sud', 'Sud')
+score_budi = tuple_score.count('Budi')
+score_sud = tuple_score.count('Sud')
+print(score_budi) # akan menampilkan output 4
+print(score_sud) # akan menampilkan output 3
+# Fitur .index()
+print(">>> Fitur .index()")
+tuple_score = ('Budi','Sud','Budi','Budi','Budi','Sud','Sud')
+score_pertama_sud = tuple_score.index('Sud')+1
+print(score_pertama_sud) # akan menampilkan output 2
