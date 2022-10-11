@@ -58,3 +58,50 @@ while True:
     print('Masukkan nama Anda dengan benar.')
 
 # Formatting pada String
+# data di konversi ke string terlebih dahulu karena format aslinya int
+# Contoh 1: Penggunaan zfill 5 pada angka satuan
+angka = 5
+print(str(angka).zfill(5))
+# Contoh 2: Penggunaan zfill 5 pada angka ratusan
+angka = 300
+print(str(angka).zfill(5))
+# Contoh 3: Penggunaan zfill 5 pada angka desimal negatif (memiliki koma)
+angka = -0.45
+# hasil sama karena jumlah karakter yang ada sudah berjumlah 5 yang di mana karakter koma (“,”) dan negatif (“-”) juga dihitung
+print(str(angka).zfill(5))
+# Contoh 4: Penggunaan zfill 7 pada angka desimal negatif (memiliki koma)
+angka = -0.45
+print(str(angka).zfill(7))
+
+# tidak perlu ubah string karena sudah bertipe string
+# Contoh 1
+kata = 'aku'
+print(kata.zfill(5))
+# Contoh 2
+kata = 'kamu'
+print(kata.zfill(5))
+# Contoh 3
+kata = 'dirinya'
+print(kata.zfill(5))
+
+# Teks rata kanan/kiri/tengah dengan rjust(), ljust(), dan center()
+'Dicoding'.rjust(20)
+'Dicoding'.ljust(20)
+'Dicoding'.ljust(20, '!')
+'Dicoding'.center(20)
+
+kalimat = "Belajar Python di Dicoding sangat menyenangkan"
+print('Dicoding' in kalimat)
+print('tidak' in kalimat)
+print('Dicoding' not in kalimat)
+print('tidak' not in kalimat)
+
+# Memberikan nilai untuk multiple variable
+data = ['shirt', 'white', 'L']  # From List
+apparel, color, size = data
+data = ('shirt', 'white', 'L')  # From Tuple
+apparel, color, size = data
+
+a = 6
+b = 4
+print("Hasilnya " + str(a + b) + "6" * 3)
